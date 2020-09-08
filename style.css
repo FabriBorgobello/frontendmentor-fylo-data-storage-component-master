@@ -1,0 +1,153 @@
+@media all and (max-width: 768px) {
+  body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("./images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #containerLeft {
+    padding: 5vh 5vh;
+  }
+  #cloud {
+    align-self: center;
+    top: 85%;
+  }
+}
+@media all and (min-width: 769px) {
+  body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("./images/bg-desktop.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  #container {
+    display: flex;
+    align-items: flex-end;
+    margin: 5%;
+  }
+  #containerLeft {
+    width: 20vw;
+    padding: 10vh 5vh;
+  }
+  #containerRight {
+    width: 40vw;
+  }
+  #cloud {
+    width: 12vw;
+    right: 8%;
+    top: -15%;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#containerLeft,
+#containerRight {
+  background-color: hsl(228, 56%, 26%);
+  color: hsl(243, 100%, 93%);
+  margin: 10px;
+}
+
+#containerLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  border-radius: 10px;
+  border-top-right-radius: 80px;
+}
+#brand {
+  margin-bottom: 2vh;
+}
+#icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  height: 45px;
+  width: 45px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+#containerRight {
+  padding: 25px 35px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#cloud {
+  position: absolute;
+  background-color: #ffffff;
+  color: #858585;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cloud span {
+  color: #000000;
+  font-size: 2rem;
+  margin-right: 0.3rem;
+}
+#storage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#barText {
+  display: flex;
+  justify-content: space-between;
+}
+#barOutside {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 50px;
+  height: 1rem;
+  padding: 2px;
+}
+#barInside {
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 50px;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3px;
+}
+#ball {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.attribution {
+  color: white;
+  margin-top: 12%;
+  text-align: center;
+}
